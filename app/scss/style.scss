@@ -1,0 +1,77 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+ul,
+h1,
+h2,
+h3 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: #fbfbfb;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.wrapper{
+    max-width: 700px;
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 50px;
+    // &__item{
+    //     height: 450px;
+    //     display: none;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 450px;
+            // display: none;
+            opacity: 0;
+            position: absolute;
+            transition: opacity .5s;
+        }
+        img:first-child{
+            // display: block;
+            opacity: 1;
+        }
+    // }
+}
+
+.buttons{
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+@import "media";
